@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'react-bootstrap'
 import Header from './comonents/Header';
 import Footer from './comonents/Footer';
 
@@ -9,7 +10,10 @@ function App() {
       <Header />
 
       <main>
-      <h1>Online Coffee Store</h1>
+        <Container>
+        <h1>Online Coffee Store</h1>
+        </Container>
+      
       </main>
       <Footer />
       </>
