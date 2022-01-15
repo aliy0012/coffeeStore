@@ -9,7 +9,7 @@ function App() {
       <>
       <Header />
 
-      <main>
+      <main className='py-3'>
         <Container>
         <h1>Online Coffee Store</h1>
         </Container>
