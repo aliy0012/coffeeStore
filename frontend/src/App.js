@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container } from 'react-bootstrap'
-import Header from './comonents/Header';
-import Footer from './comonents/Footer';
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Home from './screens/Home'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
 
       <main className='py-3'>
         <Container>
-        <h1>Online Coffee Store</h1>
+          <Home />
         </Container>
       
       </main>
