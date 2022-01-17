@@ -10,7 +10,7 @@ const products = [
     price: 34.44,
     countInStock: 8,
     rating: 4.7,
-    numReviews: 12,
+    numReviews: 11,
   },
   {
     _id: '2',
@@ -55,8 +55,7 @@ const products = [
     _id: '5',
     name: 'Grinded Espresso',
     image: '/images/espesso.jpeg',
-    description:
-      'Grinded Espresso. Roast: Dark. Aroma: Chocolate & Caramel.',
+    description: 'Grinded Espresso. Roast: Dark. Aroma: Chocolate & Caramel.',
     brand: 'Eso',
     category: 'Espresso',
     price: 33,
@@ -117,7 +116,6 @@ const products = [
     rating: 4.8,
     numReviews: 12,
   },
-
 ]
 
 export default products
