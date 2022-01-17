@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 import {
   Col,
   Row,
@@ -8,12 +8,12 @@ import {
   Card,
   Button,
   ListGroupItem,
-} from "react-bootstrap";
-import Rating from "../components/Rating";
-import products from "../products";
+} from 'react-bootstrap'
+import Rating from '../components/Rating'
+import products from '../products'
 
 const ProductScreen = (props) => {
-  const product = products.find((p) => p._id === props.match.id);
+  const product = products.find((p) => p._id === props.match.id)
   return (
     <>
       <Link className="btn btn-light my-3" to="/">
@@ -64,7 +64,7 @@ const ProductScreen = (props) => {
         </Col>
       </Row>
     </>
-  );
-};
+  )
+}
 
-export default ProductScreen;
+export default ProductScreen
