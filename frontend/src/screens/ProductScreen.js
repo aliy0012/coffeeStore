@@ -4,7 +4,6 @@ import { Col, Row, ListGroup, Image, Card, Button } from 'react-bootstrap'
 import Rating from '../components/Rating'
 import axios from 'axios'
 
-
 const ProductScreen = ({ match }) => {
   const [product, setProduct] = useState({})
 
@@ -17,8 +16,6 @@ const ProductScreen = ({ match }) => {
 
     fetchProduct()
   }, [match])
-
-  
 
   return (
     <>
