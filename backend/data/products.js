@@ -2,7 +2,7 @@ const products = [
   {
     _id: '1',
     name: 'Colombian Coffee Beans',
-    image: '/images/colombian .jpeg',
+    image: '/images/colombian.jpeg',
     description:
       'Fresh Colombian coffee beans. Light and flowery taste that many coffee lovers crave',
     brand: 'NoName',
@@ -54,7 +54,7 @@ const products = [
   {
     _id: '5',
     name: 'Grinded Espresso',
-    image: '/images/espesso.jpeg',
+    image: '/images/espresso.jpeg',
     description: 'Grinded Espresso. Roast: Dark. Aroma: Chocolate & Caramel.',
     brand: 'Eso',
     category: 'Espresso',
