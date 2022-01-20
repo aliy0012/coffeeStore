@@ -36,7 +36,6 @@ const products = [
     numReviews: 23,
   },
   {
-    _id: '4',
     name: 'Nicaraguan Coffee Beans',
     image: '/images/beans3.jpeg',
     description:
