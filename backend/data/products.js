@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Colombian Coffee Beans',
     image: '/images/colombian.jpeg',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 11,
   },
   {
-    _id: '2',
     name: 'Sumatran Coffee Beans',
     image: '/images/beans.jpeg',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: '3',
     name: 'Venezuelan Coffee Beans',
     image: '/images/beans2.jpeg',
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 23,
   },
   {
-    _id: '4',
     name: 'Nicaraguan Coffee Beans',
     image: '/images/beans3.jpeg',
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 3,
   },
   {
-    _id: '5',
     name: 'Grinded Espresso',
     image: '/images/espresso.jpeg',
     description: 'Grinded Espresso. Roast: Dark. Aroma: Chocolate & Caramel.',
@@ -64,7 +59,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '6',
     name: 'Coffee Cup',
     image: '/images/cup.jpeg',
     description:
@@ -77,7 +71,6 @@ const products = [
     numReviews: 123,
   },
   {
-    _id: '7',
     name: 'Coffee Maker',
     image: '/images/coffemaker.jpeg',
     description:
@@ -90,7 +83,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '8',
     name: 'Coffee Maker',
     image: '/images/coffemaker2.jpeg',
     description:
@@ -104,7 +96,6 @@ const products = [
   },
 
   {
-    _id: '9',
     name: 'Coffee Grinder',
     image: '/images/grinder.jpeg',
     description:
