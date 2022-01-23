@@ -6,15 +6,8 @@ import { Row, Col, ListGroup, Image, Card, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
-import {
-  getOrderDetails,
-  payOrder,
-  deliverOrder,
-} from "../actions/orderActions";
-import {
-  ORDER_PAY_RESET,
-  ORDER_DELIVER_RESET,
-} from "../constants/orderConstants";
+import { getOrderDetails, payOrder } from "../actions/orderActions";
+import { ORDER_PAY_RESET } from "../constants/orderConstants";
 
 const OrderScreen = ({ match, history }) => {
   const orderId = match.params.id;
@@ -33,7 +26,6 @@ const OrderScreen = ({ match, history }) => {
   const { userInfo } = userLogin;
 
   if (!loading) {
-    //   Calculate prices
     const addDecimals = (num) => {
       return (Math.round(num * 100) / 100).toFixed(2);
     };
@@ -60,9 +52,8 @@ const OrderScreen = ({ match, history }) => {
       document.body.appendChild(script);
     };
 
-    if (!order || successPay || successDeliver || order._id !== orderId) {
+    if (!order || successPay) {
       dispatch({ type: ORDER_PAY_RESET });
-      dispatch({ type: ORDER_DELIVER_RESET });
       dispatch(getOrderDetails(orderId));
     } else if (!order.isPaid) {
       if (!window.paypal) {
@@ -76,10 +67,6 @@ const OrderScreen = ({ match, history }) => {
   const successPaymentHandler = (paymentResult) => {
     console.log(paymentResult);
     dispatch(payOrder(orderId, paymentResult));
-  };
-
-  const deliverHandler = () => {
-    dispatch(deliverOrder(order));
   };
 
   return loading ? (
@@ -205,21 +192,6 @@ const OrderScreen = ({ match, history }) => {
                   )}
                 </ListGroup.Item>
               )}
-              {loadingDeliver && <Loader />}
-              {userInfo &&
-                userInfo.isAdmin &&
-                order.isPaid &&
-                !order.isDelivered && (
-                  <ListGroup.Item>
-                    <Button
-                      type="button"
-                      className="btn btn-block"
-                      onClick={deliverHandler}
-                    >
-                      Mark As Delivered
-                    </Button>
-                  </ListGroup.Item>
-                )}
             </ListGroup>
           </Card>
         </Col>
