@@ -68,7 +68,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #adafae;
-  --bs-body-bg: #060606;
+  --bs-body-bg: #222225;
 }
 *,
 ::after,
@@ -95,7 +95,7 @@ body {
 hr {
   margin: 1rem 0;
   color: inherit;
-  background-color: currentColor;
+  background-color: rgb(243, 202, 202);
   border: 0;
   opacity: 0.25;
 }
