@@ -71,7 +71,7 @@ export const getOrderDetails = (id) => async (dispatch, getState) => {
       error.response && error.response.data.message
         ? error.response.data.message
         : error.message;
-    if (message === "Not authorized, token failed") {
+    if (message === "Not authorized") {
       dispatch(logout());
     }
     dispatch({
@@ -114,7 +114,7 @@ export const payOrder =
         error.response && error.response.data.message
           ? error.response.data.message
           : error.message;
-      if (message === "Not authorized, token failed") {
+      if (message === "Not authorized!") {
         dispatch(logout());
       }
       dispatch({
@@ -151,7 +151,7 @@ export const listMyOrders = () => async (dispatch, getState) => {
       error.response && error.response.data.message
         ? error.response.data.message
         : error.message;
-    if (message === "Not authorized, token failed") {
+    if (message === "Not authorized!") {
       dispatch(logout());
     }
     dispatch({
