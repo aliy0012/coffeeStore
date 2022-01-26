@@ -1,6 +1,11 @@
 # coffeeStore
 
-A MERN stack e-coomerce app.
+## wireframes
+
+![](https://github.com/aliy0012/coffeeStore/blob/master/backend/doc/wireframe.drawio.png?raw=true)
+
+## A MERN stack e-coomerce app.
+
 ![](https://github.com/aliy0012/coffeeStore/blob/master/backend/doc/Screenshot%20from%202022-01-25%2019-42-27.png?raw=true)
 
 ![](https://github.com/aliy0012/coffeeStore/blob/master/backend/doc/Screenshot%20from%202022-01-26%2011-09-10.png?raw=true)
